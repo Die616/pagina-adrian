@@ -10,7 +10,7 @@ import CallButton from '../components/callButton';
 export default function Home() {
   function renderHeroSection() {
     return (
-      <section className="relative text-white text-center py-32 px-5 overflow-hidden bg-gradient-to-r from-[#0d47a1] to-[#4fc3f7]">
+      <section className="relative text-white text-center py-48 px-5 overflow-hidden bg-gradient-to-r from-[#0d47a1] to-[#4fc3f7]">
         <div className="max-w-3xl mx-auto animate-fade-in">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Dr. Adrián Fernández Arzate
@@ -157,68 +157,6 @@ export default function Home() {
             >
               <div className="mb-4 h-16 flex justify-center">
                 <img src={service.image} alt={service.title} className="h-full object-contain" />
-              </div>
-              <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
-              <p className="text-sm text-gray-700">{service.description}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-    );
-  }
-
-  function renderServicesSectionWithIcons() {
-    const services = [
-      {
-        title: 'Cálculos renales',
-        description: 'Tratamiento y prevención de piedras en riñones y vías urinarias.',
-        icon: <GiKidneys className="text-4xl text-[#4FC3F7]" />,
-      },
-      {
-        title: 'Próstata',
-        description: 'Control de crecimiento prostático, prostatitis y seguimiento médico.',
-        icon: <FaToilet className="text-4xl text-[#4FC3F7]" />,
-      },
-      {
-        title: 'Andrología',
-        description: 'Disfunción eréctil, salud sexual masculina e infertilidad.',
-        icon: <FaMars className="text-4xl text-[#4FC3F7]" />,
-      },
-      {
-        title: 'Vasectomía',
-        description: 'Procedimiento quirúrgico ambulatorio y seguro para planificación familiar.',
-        icon: <GiScalpel className="text-4xl text-[#4FC3F7]" />,
-      },
-      {
-        title: 'Infecciones urinarias',
-        description: 'Diagnóstico, tratamiento y seguimiento en mujeres y hombres.',
-        icon: <FaBacteria className="text-4xl text-[#4FC3F7]" />,
-      },
-      {
-        title: 'Cirugía endoscópica',
-        description: 'Procedimientos de mínima invasión con tecnología láser y endoscopía.',
-        icon: <FaMicroscope className="text-4xl text-[#4FC3F7]" />,
-      },
-    ];
-
-    return (
-      <section className="bg-[#f4f7fa] py-20 px-4 text-center text-[#0D47A1]">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-6 relative inline-block after:content-[''] after:block after:w-full after:h-1 after:bg-[#4FC3F7] after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left animate-fade-in">
-          Especialidades Urológicas
-        </h2>
-
-        <p className="text-[#4FC3F7] text-base md:text-lg mb-12 max-w-2xl mx-auto">
-          Diagnóstico y tratamiento profesional en salud urinaria y reproductiva masculina
-        </p>
-
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-2xl shadow-md hover:shadow-lg p-6 transition duration-300 transform hover:-translate-y-2 animate-fade-in"
-            >
-              <div className="mb-4 h-16 flex justify-center items-center">
-                {service.icon}
               </div>
               <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
               <p className="text-sm text-gray-700">{service.description}</p>
@@ -444,7 +382,6 @@ export default function Home() {
       {renderHeroSection()}
       {renderAboutSection()}
       {renderServicesSection()}
-      {renderServicesSectionWithIcons()}
       {renderConsultSectionIcons()}
       {renderAppointmentSteps()}
       {renderWhyMeSection()}
