@@ -14,7 +14,7 @@ export default function AboutUs() {
         ];
 
         return (
-            <section className="bg-[#f4f7fa] text-[#0D47A1] py-20 px-4 font-sans">
+            <section className="bg-[#f4f7fa] text-[#0D47A1] py-20 px-4 mt-32 font-sans">
                 {/* Título centrado arriba */}
                 <div className="max-w-6xl mx-auto text-center mb-12">
                     <h2 className="text-3xl sm:text-4xl font-bold relative inline-block after:content-[''] after:block after:w-full after:h-1 after:bg-[#4FC3F7] after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left">

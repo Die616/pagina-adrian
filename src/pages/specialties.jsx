@@ -5,7 +5,7 @@ import CallButton from "../components/callButton";
 export default function Specialties() {
     function renderHeroUrologySection() {
         return (
-            <section className="bg-[#f4f7fa] text-[#0D47A1] py-24 px-4 font-sans">
+            <section className="bg-[#f4f7fa] text-[#0D47A1] py-24 px-4 mt-32 font-sans">
                 <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10 animate-fade-in">
                     {/* Texto */}
                     <div className="flex-1 min-w-[300px]">

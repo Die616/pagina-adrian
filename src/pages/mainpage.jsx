@@ -9,7 +9,7 @@ import CallButton from '../components/callButton';
 export default function Home() {
   function renderHeroSection() {
     return (
-      <section className="relative text-white text-center py-48 px-5 overflow-hidden bg-gradient-to-r from-[#0d47a1] to-[#4fc3f7]">
+      <section className="relative text-white text-center py-48 px-5 mt-32 overflow-hidden bg-gradient-to-r from-[#0d47a1] to-[#4fc3f7]">
         <div className="max-w-3xl mx-auto animate-fade-in">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Dr. Adrián Fernández Arzate

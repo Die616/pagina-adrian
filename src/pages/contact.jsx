@@ -5,7 +5,7 @@ import CallButton from "../components/callButton";
 export default function Contact() {
     function renderContactSection() {
         return (
-            <section id="contacto" className="bg-[#f4f7fa] text-[#0D47A1] py-24 px-4 font-sans">
+            <section id="contacto" className="bg-[#f4f7fa] text-[#0D47A1] py-24 px-4 mt-32 font-sans">
                 <div className="max-w-6xl mx-auto flex flex-col gap-12">
                     {/* Texto de contacto */}
                     <div className="text-center md:text-left">
