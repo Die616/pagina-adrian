@@ -28,9 +28,8 @@ export default function Header() {
   }, [location]);
 
   return (
-    <header className={`fixed top-0 w-full z-50 transition-colors duration-300 ${
-      isScrolled ? 'bg-white/80 backdrop-blur-md shadow-md' : 'bg-white'
-    }`}>
+    <header className={`fixed top-0 w-full z-50 transition-colors duration-300 ${isScrolled ? 'bg-white/80 backdrop-blur-md shadow-md' : 'bg-white'
+      }`}>
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center">
@@ -39,11 +38,12 @@ export default function Header() {
 
         {/* Botón de menú móvil */}
         <button
-          className="md:hidden text-3xl text-[#0D47A1] focus:outline-none"
+          className="md:hidden text-5xl text-[#0D47A1] focus:outline-none"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          ☰
+          {menuOpen ? '✕' : '☰'}
         </button>
+
 
         {/* Navegación escritorio */}
         <nav className="hidden md:flex space-x-8 text-sm font-medium">
@@ -53,15 +53,13 @@ export default function Header() {
               <Link
                 key={link.label}
                 to={link.path}
-                className={`relative group transition-colors duration-300 ${
-                  isActive ? 'text-[#4FC3F7] font-semibold' : 'text-[#0D47A1] hover:text-[#4FC3F7]'
-                }`}
+                className={`relative group transition-colors duration-300 ${isActive ? 'text-[#4FC3F7] font-semibold' : 'text-[#0D47A1] hover:text-[#4FC3F7]'
+                  }`}
               >
                 {link.label}
                 <span
-                  className={`absolute left-0 -bottom-1 h-0.5 bg-[#4FC3F7] transition-all duration-500 ${
-                    isActive ? 'w-full' : 'w-0 group-hover:w-full'
-                  }`}
+                  className={`absolute left-0 -bottom-1 h-0.5 bg-[#4FC3F7] transition-all duration-500 ${isActive ? 'w-full' : 'w-0 group-hover:w-full'
+                    }`}
                 />
               </Link>
             );
@@ -79,9 +77,8 @@ export default function Header() {
                 <Link
                   key={link.label}
                   to={link.path}
-                  className={`transition-colors duration-300 ${
-                    isActive ? 'text-[#4FC3F7] font-semibold' : 'text-[#0D47A1] hover:text-[#4FC3F7]'
-                  }`}
+                  className={`transition-colors duration-300 ${isActive ? 'text-[#4FC3F7] font-semibold' : 'text-[#0D47A1] hover:text-[#4FC3F7]'
+                    }`}
                 >
                   {link.label}
                 </Link>
