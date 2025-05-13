@@ -1,5 +1,6 @@
 import Footer from "../components/footer";
 import Header from "../components/navbar";
+import CallButton from "../components/callButton";
 
 export default function Specialties() {
     function renderHeroUrologySection() {
@@ -170,6 +171,7 @@ export default function Specialties() {
             {renderSpecialtyAreasSection()}
             {renderCertificatesSection()}
             <Footer />
+            <CallButton />
         </main>
     );
 }

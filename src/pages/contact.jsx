@@ -1,5 +1,6 @@
 import Footer from "../components/footer";
 import Header from "../components/navbar";
+import CallButton from "../components/callButton";
 
 export default function Contact() {
     function renderContactSection() {
@@ -146,6 +147,7 @@ export default function Contact() {
             {renderContactSection()}
             {renderContactFormSection()}
             <Footer />
+            <CallButton />
         </main>
     );
 }

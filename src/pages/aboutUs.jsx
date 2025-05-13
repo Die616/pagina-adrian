@@ -1,5 +1,6 @@
 import Footer from "../components/footer";
 import Header from "../components/navbar";
+import CallButton from "../components/callButton";
 
 export default function AboutUs() {
     function renderCredentialsSection() {
@@ -48,6 +49,11 @@ export default function AboutUs() {
                             className="w-full rounded-2xl shadow-xl object-cover"
                         />
                     </div>
+                </div>
+
+                {/* Cédula profesional al final */}
+                <div className="mt-12 text-center text-lg text-gray-700 font-medium">
+                    No. de cédula profesional: <span className="font-semibold text-[#0D47A1]">13178380</span>
                 </div>
             </section>
         );
@@ -120,6 +126,7 @@ export default function AboutUs() {
             {renderTrainingSection()}
             {renderClosingMessageSection()}
             <Footer />
+            <CallButton />
         </main>
     );
 }

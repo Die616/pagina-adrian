@@ -1,5 +1,4 @@
-import { FaToilet, FaMars, FaBacteria, FaMicroscope } from 'react-icons/fa';
-import { GiKidneys, GiScalpel } from 'react-icons/gi';
+import { Link } from "react-router-dom";
 import { FaCheck } from 'react-icons/fa'
 
 import Footer from '../components/footer';
@@ -92,9 +91,11 @@ export default function Home() {
               <li>• Consultas en Guadalajara, Jalisco</li>
             </ul>
             <div className="mt-8">
-              <button className="bg-[#4FC3F7] hover:bg-[#0D47A1] text-white px-6 py-3 rounded-lg font-medium transition">
-                Ver más
-              </button>
+              <Link to="/contacto">
+                <button className="bg-[#4FC3F7] hover:bg-[#0D47A1] text-white px-6 py-3 rounded-lg font-medium transition">
+                  Ver más
+                </button>
+              </Link>
             </div>
           </div>
         </div>
