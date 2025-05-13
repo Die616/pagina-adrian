@@ -74,7 +74,7 @@ export default function Home() {
           </div>
 
           {/* Texto */}
-          <div className="flex-1 min-w-[300px]">
+          <div className="flex-1 min-w-[300px] text-center md:text-left flex flex-col items-center md:items-start">
             <h2 className="text-3xl sm:text-4xl font-bold text-[#0D47A1] mb-6 relative inline-block after:content-[''] after:block after:w-full after:h-1 after:bg-[#4FC3F7] after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left">
               Sobre mí
             </h2>
@@ -229,15 +229,15 @@ export default function Home() {
           Brindo atención médica profesional y personalizada para hombres, mujeres y niños. Estos son algunos de los principales motivos de consulta:
         </p>
 
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 text-left max-w-6xl mx-auto">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 text-center md:text-left items-center md:items-start max-w-6xl mx-auto">
           {consultTopics.map((group, index) => (
-            <div key={index} className="animate-fade-in">
+            <div key={index} className="flex flex-col items-center md:items-start animate-fade-in">
               <h3 className="text-[#4FC3F7] text-lg font-semibold mb-3">
                 {group.title}
               </h3>
               <ul className="space-y-2 text-gray-700">
                 {group.items.map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-2">
+                  <li key={idx} className="flex justify-center items-center gap-2 text-center md:justify-start md:text-left">
                     <FaCheck className="text-green-500 text-lg mt-1" />
                     <span>{item}</span>
                   </li>
@@ -246,7 +246,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-      </section>
+      </section >
     );
   }
 
