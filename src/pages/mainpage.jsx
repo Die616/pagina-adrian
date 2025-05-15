@@ -5,8 +5,12 @@ import Footer from '../components/footer';
 import Header from '../components/navbar';
 import CallButton from '../components/callButton';
 
+import { Helmet } from 'react-helmet';
+
 
 export default function Home() {
+
+
   function renderHeroSection() {
     return (
       <section className="relative text-white text-center py-48 px-5 mt-32 overflow-hidden bg-gradient-to-r from-[#0d47a1] to-[#4fc3f7]">
@@ -379,6 +383,21 @@ export default function Home() {
 
   return (
     <div className="text-gray-800 bg-white min-h-screen">
+      <Helmet>
+        <title>Urólogo en Guadalajara | Dr. Adrián Fernández</title>
+        <meta
+          name="description"
+          content="Atención profesional en urología en Guadalajara. Cirugía prostática, vasectomía, infecciones urinarias y más. Agenda tu cita con el Dr. Adrián Fernández."
+        />
+        <meta name="keywords" content="urólogo en Guadalajara, cirugía prostática, vasectomía, salud urinaria, Dr. Adrián Fernández" />
+        <meta name="author" content="Dr. Adrián Fernández" />
+        <meta property="og:title" content="Urólogo en Guadalajara | Dr. Adrián Fernández" />
+        <meta property="og:description" content="Especialista en salud masculina y urología avanzada. Atención en Guadalajara con ética y profesionalismo." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://urologoadrianfernandez.com/" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://urologoadrianfernandez.com/" />
+      </Helmet>
       <Header />
       {renderHeroSection()}
       {renderAboutSection()}

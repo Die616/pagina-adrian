@@ -2,6 +2,9 @@ import Footer from "../components/footer";
 import Header from "../components/navbar";
 import CallButton from "../components/callButton";
 
+import { Helmet } from 'react-helmet';
+
+
 export default function AboutUs() {
     function renderCredentialsSection() {
         const credentials = [
@@ -121,6 +124,24 @@ export default function AboutUs() {
 
     return (
         <main className="text-gray-800 bg-white min-h-screen">
+            <Helmet>
+                <title>Sobre el Dr. Adrián Fernández | Urólogo Certificado en Guadalajara</title>
+                <meta
+                    name="description"
+                    content="Conoce al Dr. Adrián Fernández, urólogo certificado con experiencia en cirugía láser HoLEP, laparoscopía y salud urinaria. Atención ética y profesional en Guadalajara."
+                />
+                <meta
+                    name="keywords"
+                    content="Dr. Adrián Fernández, urólogo en Guadalajara, especialista en urología, cirugía láser, cirugía laparoscópica, cédula profesional 13178380"
+                />
+                <meta name="author" content="Dr. Adrián Fernández" />
+                <meta name="robots" content="index, follow" />
+                <meta property="og:title" content="Sobre el Dr. Adrián Fernández | Urólogo en Guadalajara" />
+                <meta property="og:description" content="Experto en urología y cirugía mínimamente invasiva. Conoce su formación y experiencia médica." />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://urologoadrianfernandez.com/sobre-mi" />
+                <link rel="canonical" href="https://urologoadrianfernandez.com/sobre-mi" />
+            </Helmet>
             <Header />
             {renderCredentialsSection()}
             {renderTrainingSection()}

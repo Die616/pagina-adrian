@@ -2,6 +2,9 @@ import Footer from "../components/footer";
 import Header from "../components/navbar";
 import CallButton from "../components/callButton";
 
+import { Helmet } from 'react-helmet';
+
+
 export default function Contact() {
     function renderContactSection() {
         return (
@@ -143,6 +146,24 @@ export default function Contact() {
 
     return (
         <main className="text-gray-800 bg-white min-h-screen">
+            <Helmet>
+                <title>Contacto | Agenda tu Cita con el Dr. Adrián Fernández - Urólogo en Guadalajara</title>
+                <meta
+                    name="description"
+                    content="Agenda una consulta con el Dr. Adrián Fernández, urólogo certificado en Guadalajara. Contáctanos por teléfono, WhatsApp o correo electrónico. Atención en dos ubicaciones."
+                />
+                <meta
+                    name="keywords"
+                    content="contacto urólogo Guadalajara, agendar cita urología, WhatsApp urólogo, teléfono Dr. Adrián Fernández, Hospital Country 2000"
+                />
+                <meta name="author" content="Dr. Adrián Fernández" />
+                <meta name="robots" content="index, follow" />
+                <meta property="og:title" content="Contacto | Dr. Adrián Fernández - Urólogo en Guadalajara" />
+                <meta property="og:description" content="Agenda tu consulta con el Dr. Adrián Fernández. Atención profesional en Guadalajara y Atotonilco el Alto." />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://urologoadrianfernandez.com/contacto" />
+                <link rel="canonical" href="https://urologoadrianfernandez.com/contacto" />
+            </Helmet>
             <Header />
             {renderContactSection()}
             {renderContactFormSection()}
